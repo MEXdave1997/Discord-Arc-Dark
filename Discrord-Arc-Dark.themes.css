@@ -1,0 +1,1894 @@
+//META{"name":"Discord Arc Dark","description":"A theme for Discord that changes the colors to match the Arc Dark GTK scheme.","author":"sans","version":"1.00"}*//
+
+------------------------------
+
+This theme was ported from another site.
+
+Original Author: sans
+
+Original Theme: https://userstyles.org/styles/127986/discord-arc-dark
+
+------------------------------
+
+
+:root
+  {
+    --white: #fff;
+    --silver: #708090;
+    --gray: #d8d8d8;
+    --highlight: #5294e2;
+    --dark-highlight: #3c86de;
+    --transparent-highlight: rgba(82, 148, 226, 0.1);
+    --light: #353945;
+    --medium: #2f343f;
+    --medium-dark: #282d36;
+    --medium-transparent: rgba(47, 52, 63, 0.9);
+    --dark: #262b36;
+  }
+
+  .layer
+  {
+    background: var(--light) !important;
+  }
+
+  [class*=badge]
+  {
+    background-color: var(--highlight) !important;
+  }
+
+  .bot-tag
+  {
+    background: var(--silver);
+  }
+
+  .mention
+  {
+    color: var(--highlight);
+  }
+
+  .Select-placeholder
+  {
+    color: var(--gray) !important;
+  }
+
+  [class^=spinner-] [class^=path-]
+  {
+    stroke: var(--highlight);
+  }
+
+  .checkbox .checkbox-inner [type=checkbox]:checked + span
+  {
+    background-color: var(--highlight) !important;
+    border-color: var(--highlight) !important;
+  }
+
+  .keybind-shortcut span
+  {
+    background-color: var(--dark) !important;
+    border-color: var(--medium);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: var(--gray) !important;
+  }
+
+  .keybind-shortcut span [class^=bind-arrow] g
+  {
+    fill: var(--gray);
+  }
+
+  .search-bar
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .search-bar .search-bar-inner
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .search-bar input,
+    .search-bar input::-webkit-input-placeholder
+    .search-bar input:-ms-input-placeholder
+    .search-bar input::placeholder
+  {
+    color: var(--gray) !important;
+  }
+
+  .connecting
+  {
+    background-color: var(--medium);
+  }
+
+  [class^=noChannel-]
+  {
+    background: var(--medium-dark) !important;
+  }
+
+  [class^=contextMenu-]
+  {
+    background: var(--dark) !important;
+  }
+
+  [class^=contextMenu-] [class^=itemGroup-]
+  {
+    border-color: var(--medium) !important;
+  }
+
+  [class^=contextMenu-] [class^=item-]:hover
+  {
+    background: var(--medium) !important;
+  }
+
+  [class^=contextMenu-] [class*=itemSubMenu-]
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .need-help-modal.deprecated .header
+  {
+    background-color: var(--highlight);
+  }
+
+  .need-help-modal.deprecated #help-query,
+  .need-help-modal.deprecated .form-inner,
+  .need-help-modal.deprecated .footer
+  {
+    background-color: var(--dark);
+  }
+
+  .need-help-modal.deprecated #help-query
+  {
+    border-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: var(--gray);
+  }
+
+  .need-help-modal.deprecated .footer
+  {
+    border-color: var(--medium);
+  }
+
+  .tooltip
+  {
+    background-color: var(--highlight) !important;
+    color: var(--white);
+  }
+
+  .tooltip.tooltip-top::after
+  {
+    border-top-color: var(--highlight) !important;
+  }
+
+  .tooltip.tooltip-bottom::after
+  {
+    border-bottom-color: var(--highlight) !important;
+  }
+
+  .tooltip.tooltip-left::after
+  {
+    border-left-color: var(--highlight) !important;
+  }
+
+  .tooltip.tooltip-right::after
+  {
+    border-right-color: var(--highlight) !important;
+  }
+
+  .small-popout-box
+  {
+    background-color: var(--dark);
+    border-color: var(--dark);
+  }
+
+  .small-popout-box .btn-item:hover
+  {
+    color: var(--white);
+  }
+
+  .themed-popout .header
+  {
+    background-color: var(--light) !important;
+  }
+
+  .themed-popout .header .search-bar .search-bar-tag
+  {
+    background: var(--medium);
+  }
+
+  .themed-popout .body [class^=scroller-]
+  {
+    background-color: var(--medium);
+  }
+
+  .themed-popout .body [class^=scroller-]::-webkit-scrollbar-track-piece
+  {
+    background-color: var(--medium);
+  }
+
+  .themed-popout .body [class^=scroller-]::-webkit-scrollbar-thumb
+  {
+    background-color: var(--dark);
+  }
+
+  .themed-popout .body .friend
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .themed-popout .body .friend.selected, .themed-popout .body .friend:hover
+  {
+    background: var(--dark) !important;
+  }
+
+  .themed-popout .body .error-state
+  {
+    background-color: var(--medium);
+  }
+
+  .themed-popout .footer
+  {
+    background-color: var(--light) !important;
+  }
+
+  .themed-popout .footer button
+  {
+    background-color: var(--highlight);
+  }
+
+  .themed-popout .footer button:hover
+  {
+    background-color: var(--dark-highlight);
+  }
+
+  [class^=menu-]
+  {
+    background-color: var(--dark);
+  }
+
+  [class^=menu-] [class^=item-][class*=invite-] [class^=label-]
+  {
+    color: var(--highlight) !important;
+  }
+
+  [class^=menu-] [class^=item-]:hover
+  {
+    background-color: var(--light);
+  }
+
+  [class^=menu-] [class^=item-]:hover [class^=label-],
+      [class^=menu-] [class^=item-]:hover [class^=statusIconText-]
+  {
+    color: var(--white);
+  }
+
+  [class^=menu-] [class^=separator-]
+  {
+    border-color: var(--dark);
+  }
+
+  .messages-popout-wrap
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .messages-popout-wrap .header
+  {
+    background-color: var(--light) !important;
+  }
+
+  .messages-popout-wrap .message-group
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .messages-popout-wrap .message-group:hover .action-buttons
+  {
+    background-color: var(--medium) !important;
+    -webkit-box-shadow: none;
+    box-shadow: none !important;
+  }
+
+  .messages-popout-wrap .message-group .jump-button
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .messages-popout-wrap .message-group .jump-button:hover .text
+  {
+    color: var(--gray) !important;
+  }
+
+  .messages-popout-wrap .footer
+  {
+    background-color: var(--medium-dark) !important;
+  }
+
+  .search-popout
+  {
+    background-color: var(--dark);
+  }
+
+  .search-popout .search-query
+  {
+    border-color: var(--dark);
+  }
+
+  .search-popout .results-group::before
+  {
+    border-color: var(--medium);
+  }
+
+  .search-popout .search-option::after, .search-popout .search-option:hover::after, .search-popout .search-option.selected::after,
+    .search-popout .option::after,
+    .search-popout .option:hover::after,
+    .search-popout .option.selected::after
+  {
+    background-image: none;
+  }
+
+  .search-popout .search-option:hover, .search-popout .search-option.selected,
+    .search-popout .option:hover,
+    .search-popout .option.selected
+  {
+    background-color: var(--medium);
+  }
+
+  .search-popout .search-option:hover .filter,
+      .search-popout .search-option:hover .answer,
+      .search-popout .search-option:hover .non-text, .search-popout .search-option.selected .filter,
+      .search-popout .search-option.selected .answer,
+      .search-popout .search-option.selected .non-text,
+      .search-popout .option:hover .filter,
+      .search-popout .option:hover .answer,
+      .search-popout .option:hover .non-text,
+      .search-popout .option.selected .filter,
+      .search-popout .option.selected .answer,
+      .search-popout .option.selected .non-text
+  {
+    color: var(--white);
+  }
+
+  .search-popout .search-option .filter,
+    .search-popout .search-option .answer,
+    .search-popout .search-option .non-text,
+    .search-popout .option .filter,
+    .search-popout .option .answer,
+    .search-popout .option .non-text
+  {
+    color: var(--gray);
+  }
+
+  .search-popout .search-option strong,
+    .search-popout .option strong
+  {
+    color: var(--white);
+  }
+
+  [class^=userPopout-] [class^=headerNormal-]
+  {
+    background: var(--dark);
+  }
+
+  [class^=userPopout-] [class^=headerPlaying-]
+  {
+    background: var(--highlight);
+  }
+
+  [class^=userPopout-] [class^=body-]
+  {
+    background-color: var(--medium) !important;
+    border-color: var(--dark) !important;
+  }
+
+  [class^=userPopout-] [class^=body-] [class^=headerText-]
+  {
+    color: var(--gray) !important;
+  }
+
+  [class^=userPopout-] [class^=body-] [class*=name-]
+  {
+    color: var(--white) !important;
+  }
+
+  [class^=userPopout-] [class^=body-] [class^=details-]
+  {
+    color: var(--gray) !important;
+  }
+
+  [class^=userPopout-] [class^=body-] [class^=bodyDivider-]
+  {
+    background-color: var(--light) !important;
+  }
+
+  [class^=userPopout-] [class^=body-] [class^=bodyTitleText-]
+  {
+    color: var(--gray) !important;
+  }
+
+  [class^=userPopout-] [class^=body-] .member-role
+  {
+    background-color: var(--light);
+    border-color: var(--light);
+    color: var(--gray);
+  }
+
+  [class^=userPopout-] [class^=body-] .note textarea
+  {
+    background-color: var(--medium);
+    color: var(--gray);
+  }
+
+  [class^=userPopout-] [class^=footer-]
+  {
+    background-color: var(--medium);
+  }
+
+  [class^=userPopout-] [class^=footer-] .quick-message
+  {
+    background: var(--dark);
+    border-color: var(--dark);
+    color: var(--gray);
+  }
+
+  #user-profile-modal .header::after
+  {
+    background: var(--medium);
+  }
+
+  #user-profile-modal .header .username
+  {
+    color: var(--white);
+  }
+
+  #user-profile-modal .header .discriminator
+  {
+    color: var(--gray) !important;
+  }
+
+  #user-profile-modal .header .activity
+  {
+    color: var(--gray) !important;
+  }
+
+  #user-profile-modal .tab-bar-container
+  {
+    background-color: var(--medium);
+    border-color: var(--medium);
+  }
+
+  #user-profile-modal .tab-bar-container .tab-bar-item
+  {
+    border-color: var(--gray);
+    color: var(--gray);
+  }
+
+  #user-profile-modal .tab-bar-container .tab-bar-item.selected
+  {
+    border-color: var(--white);
+    color: var(--white);
+  }
+
+  #user-profile-modal .avatar-wrapper
+  {
+    background-color: var(--medium);
+  }
+
+  #user-profile-modal .guilds
+  {
+    background: var(--light);
+  }
+
+  #user-profile-modal .guilds::-webkit-scrollbar-track-piece
+  {
+    background-color: var(--light);
+    border-color: var(--light);
+  }
+
+  #user-profile-modal .guilds::-webkit-scrollbar-thumb
+  {
+    background-color: var(--dark);
+    border-color: var(--light);
+  }
+
+  #user-profile-modal .guilds .section-header
+  {
+    color: var(--gray) !important;
+  }
+
+  #user-profile-modal .guilds .note textarea
+  {
+    background: var(--light);
+    color: var(--gray);
+  }
+
+  #user-profile-modal .guilds .guild
+  {
+    color: var(--gray);
+  }
+
+  #user-profile-modal .guilds .guild:hover
+  {
+    background: var(--medium);
+    color: var(--white);
+  }
+
+  #user-profile-modal .guilds svg path
+  {
+    fill: var(--gray) !important;
+  }
+
+  #user-profile-modal .guilds [class^=headerText-]
+  {
+    color: var(--gray) !important;
+  }
+
+  #user-profile-modal .guilds [class*=name-]
+  {
+    color: var(--white) !important;
+  }
+
+  #user-profile-modal .guilds [class^=details-]
+  {
+    color: var(--gray) !important;
+  }
+
+  #user-profile-modal .guilds .section + .section
+  {
+    border-color: var(--dark);
+  }
+
+  #user-profile-modal .guilds .connected-account
+  {
+    border-color: var(--dark) !important;
+  }
+
+  #user-profile-modal .guilds .connected-account .connected-account-name
+  {
+    color: var(--gray) !important;
+  }
+
+  #user-profile-modal .empty
+  {
+    background: var(--light);
+  }
+
+  .upload-modal
+  {
+    background-color: var(--light);
+  }
+
+  .upload-modal [class*=inner]
+  {
+    background-color: var(--light) !important;
+    border-color: var(--dark);
+  }
+
+  .upload-modal [class*=inner] .file .icon.image
+  {
+    border-color: var(--highlight);
+  }
+
+  .upload-modal textarea
+  {
+    background-color: var(--medium-dark);
+  }
+
+  .upload-modal .footer
+  {
+    background-color: var(--dark);
+  }
+
+  .upload-modal .footer .button
+  {
+    background-color: var(--dark);
+  }
+
+  .upload-modal .footer .button-primary
+  {
+    background-color: var(--highlight);
+    color: var(--white);
+  }
+
+  .guilds-wrapper
+  {
+    background-color: var(--dark);
+  }
+
+  .guilds-wrapper .friends-icon
+  {
+    background-color: var(--light);
+  }
+
+  .guilds-wrapper .guild .avatar-small
+  {
+    background-color: var(--light);
+  }
+
+  .guilds-wrapper .guild.selected .avatar-small
+  {
+    background-color: var(--highlight);
+  }
+
+  .guilds-wrapper .unread-mentions-bar
+  {
+    background-color: var(--highlight);
+    -webkit-box-shadow: none;
+    box-shadow: none !important;
+  }
+
+  .guilds-wrapper .unread-mentions-bar:hover
+  {
+    background-color: var(--highlight);
+  }
+
+  .guilds-wrapper .guild-inner::after
+  {
+    background-color: var(--highlight) !important;
+  }
+
+  .guilds-wrapper .guilds-add
+  {
+    background: var(--light);
+  }
+
+  .create-guild-container .form-inner
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .create-guild-container .form-inner header
+  {
+    color: var(--highlight);
+  }
+
+  .create-guild-container .form-inner .action
+  {
+    background: var(--dark);
+  }
+
+  .create-guild-container .form-inner .action:hover.create .btn
+  {
+    background-color: var(--dark-highlight) !important;
+  }
+
+  .create-guild-container .form-inner .create .action-header
+  {
+    color: var(--highlight) !important;
+  }
+
+  .create-guild-container .form-inner .or
+  {
+    visibility: hidden;
+  }
+
+  .create-guild-container .form-inner .btn-primary
+  {
+    background-color: var(--highlight);
+  }
+
+  .create-guild-container .form-inner .sample-link
+  {
+    color: var(--highlight) !important;
+  }
+
+  .create-guild-container .form-inner h5
+  {
+    color: var(--highlight);
+  }
+
+  .create-guild-container .form-inner input
+  {
+    background-color: var(--dark);
+    border-color: var(--dark) !important;
+    border-radius: 5px;
+    color: var(--gray) !important;
+    padding-left: 10px;
+  }
+
+  .create-guild-container .form-inner .region-select
+  {
+    background-color: var(--dark);
+  }
+
+  .create-guild-container .form-inner .region-select .region-select-inner
+  {
+    border-color: var(--dark);
+  }
+
+  .create-guild-container .form-inner .region-select button
+  {
+    background-color: var(--highlight);
+    border-color: var(--highlight);
+    color: var(--white);
+  }
+
+  .create-guild-container .form-inner .region-select button:hover
+  {
+    background-color: var(--dark-highlight);
+  }
+
+  .create-guild-container .form-inner .avatar-uploader-inner
+  {
+    border-color: var(--medium);
+  }
+
+  .create-guild-container .form-actions
+  {
+    background-color: var(--dark) !important;
+    border-color: var(--dark) !important;
+  }
+
+  .create-guild-container .form-actions .btn-default
+  {
+    background-color: var(--dark);
+    border-color: var(--dark);
+  }
+
+  .create-guild-container .form-actions .btn-primary
+  {
+    background-color: var(--highlight);
+  }
+
+  .private-channels [class^=scroller-]
+  {
+    background-color: var(--medium);
+  }
+
+  .private-channels ::-webkit-scrollbar-thumb
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .private-channels [class^=scrollbar-]
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .private-channels [class^=scrollbar-] [class^=thumb-]
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .private-channels [class^=scrollbar-] [class^=pad-]
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .private-channels .channel.selected a
+  {
+    background-color: var(--light);
+  }
+
+  .private-channels .channel:hover a
+  {
+    background-color: var(--light);
+  }
+
+  [class^=quickswitcher]
+  {
+    background-color: var(--medium) !important;
+  }
+
+  [class^=quickswitcher] input
+  {
+    background-color: var(--dark) !important;
+  }
+
+  [class^=quickswitcher] [class^=resultFocused]
+  {
+    background-color: var(--dark) !important;
+  }
+
+  #friends
+  {
+    background-color: var(--light) !important;
+  }
+
+  #friends [class*=headerBar-]
+  {
+    background-color: var(--light);
+  }
+
+  #friends .btn
+  {
+    background-color: var(--highlight);
+  }
+
+  #friends .tab-bar-item:hover
+  {
+    background-color: var(--dark) !important;
+  }
+
+  #friends .tab-bar-item-primary
+  {
+    background-color: var(--highlight) !important;
+  }
+
+  #friends .tab-bar-item-primary:hover
+  {
+    background-color: var(--dark-highlight) !important;
+  }
+
+  #friends .tab-bar-item-primary.selected
+  {
+    background-color: var(--white) !important;
+    color: var(--highlight) !important;
+  }
+
+  #friends .tab-bar-item.selected .badge
+  {
+    background-color: var(--highlight) !important;
+  }
+
+  #friends .friend-table-add-header
+  {
+    background: var(--light) !important;
+  }
+
+  #friends .add-friend-input-wrapper
+  {
+    background-color: var(--medium);
+    border-color: var(--dark);
+  }
+
+  #friends .add-friend-input-wrapper .add-friend-input::-webkit-input-placeholder,
+      #friends .add-friend-input-wrapper .add-friend-input::-ms-input-placeholder,
+      #friends .add-friend-input-wrapper .add-friend-input::placeholder
+  {
+    color: var(--gray);
+  }
+
+  #friends .friend-table-suggestions-header
+  {
+    border-color: var(--dark) !important;
+  }
+
+  #friends .friends-header
+  {
+    background-color: var(--light) !important;
+  }
+
+  #friends .friends-table
+  {
+    background-color: var(--light);
+  }
+
+  #friends .friends-table-body::-webkit-scrollbar-track-piece
+  {
+    background-color: var(--light);
+  }
+
+  #friends .friends-table-body::-webkit-scrollbar-thumb
+  {
+    background-color: var(--dark);
+  }
+
+  #friends .friends-row:hover
+  {
+    background-color: var(--medium) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  #friends .friends-row:hover .discord-tag,
+      #friends .friends-row:hover .status-text
+  {
+    color: var(--white);
+  }
+
+  #friends .avatar-small
+  {
+    background-color: var(--highlight) !important;
+  }
+
+  #friends .friends-action
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .private-channel-recipients-invite .btn
+  {
+    background: var(--highlight) !important;
+  }
+
+  .ui-video
+  {
+    background-color: var(--medium-dark) !important;
+  }
+
+  .ui-video .flex-spacer
+  {
+    background-color: var(--medium-dark) !important;
+  }
+
+  .ui-video .private-channel-call-actions [class*=icons-wrapper]
+  {
+    background-color: var(--light) !important;
+    border-color: var(--light) !important;
+  }
+
+  .channel-notice
+  {
+    background-color: var(--medium-dark) !important;
+  }
+
+  .channel-notice button
+  {
+    background: var(--light) !important;
+    border-color: var(--dark) !important;
+  }
+
+  .channels-wrap > [class^=flex-] [class^=header-],
+  [class^=channels-] > [class^=flex-] [class^=header-]
+  {
+    background-color: var(--medium);
+  }
+
+  .channels-wrap > [class^=flex-] [class^=header-]:hover,
+    [class^=channels-] > [class^=flex-] [class^=header-]:hover
+  {
+    background-color: var(--medium-dark);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap],
+  [class^=channels-] > [class^=flex-] > [class^=scrollerWrap]
+  {
+    background-color: var(--medium);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=scroller-]::-webkit-scrollbar-thumb,
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=scroller-]::-webkit-scrollbar-thumb
+  {
+    background-color: var(--dark);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=scrollbar-],
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=scrollbar-]
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=scrollbar-] [class^=thumb-],
+      [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=scrollbar-] [class^=thumb-]
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=scrollbar-] [class^=pad-],
+      [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=scrollbar-] [class^=pad-]
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentHoveredText-],
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentHoveredText-]
+  {
+    background-color: var(--light);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentHoveredText-] > [class^=nameDefaultText-],
+      [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentHoveredText-] > [class^=nameDefaultText-]
+  {
+    color: var(--white);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentDefaultVoice-] > [class^=flex-] [class^=wrapper-],
+    .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentSelectedVoice-] > [class^=flex-] [class^=wrapper-],
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentDefaultVoice-] > [class^=flex-] [class^=wrapper-],
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentSelectedVoice-] > [class^=flex-] [class^=wrapper-]
+  {
+    background-color: var(--light);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentHoveredVoice-],
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentHoveredVoice-]
+  {
+    background-color: var(--light);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentHoveredVoice-] > [class^=flex-] [class^=wrapper-],
+      [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=contentHoveredVoice-] > [class^=flex-] [class^=wrapper-]
+  {
+    background-color: var(--medium);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=iconSpacing-] [class^=wrapper-],
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=iconSpacing-] [class^=wrapper-]
+  {
+    background-color: var(--highlight);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=avatarSpeaking-],
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDefault-] [class^=avatarSpeaking-]
+  {
+    -webkit-box-shadow: 0 0 0 2px var(--highlight), inset 0 0 0 1.5px var(--medium);
+    box-shadow: 0 0 0 2px var(--highlight), inset 0 0 0 1.5px var(--medium);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=contentSelectedText-],
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=contentSelectedText-]
+  {
+    background-color: var(--light);
+  }
+
+  .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDragBefore-]::before,
+    .channels-wrap > [class^=flex-] > [class^=scrollerWrap] [class^=containerDragAfter-]::after,
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDragBefore-]::before,
+    [class^=channels-] > [class^=flex-] > [class^=scrollerWrap] [class^=containerDragAfter-]::after
+  {
+    background-color: var(--highlight);
+  }
+
+  .channels-wrap > [class^=flex-] [class*=unreadBar],
+  [class^=channels-] > [class^=flex-] [class*=unreadBar]
+  {
+    background-color: var(--silver) !important;
+  }
+
+  .channels-wrap > [class^=container-],
+  [class^=channels-] > [class^=container-]
+  {
+    background-color: var(--medium-dark);
+  }
+
+  #rtc-connection-popout header
+  {
+    background-color: var(--highlight);
+  }
+
+  #rtc-connection-popout section
+  {
+    background-color: var(--dark);
+  }
+
+  #rtc-connection-popout section::after
+  {
+    border-top-color: var(--dark);
+  }
+
+  #rtc-connection-popout hr
+  {
+    border-color: var(--medium);
+  }
+
+  #rtc-connection-popout .sparkline line
+  {
+    stroke: var(--highlight) !important;
+  }
+
+  .chat .flex-spacer
+  {
+    background-color: var(--light);
+  }
+
+  .chat .flex-spacer > [class^=flex-]
+  {
+    background-color: var(--light);
+  }
+
+  .chat .flex-spacer [class*=buttonFilledDefault]
+  {
+    background-color: var(--highlight);
+  }
+
+  .chat > [class^=titleWrapper-] [class*=title]
+  {
+    background-color: var(--light);
+  }
+
+  .chat [name=NotificationBellOff] path:last-child
+  {
+    stroke: var(--highlight);
+  }
+
+  .chat [class^=iconBadge-]
+  {
+    background-color: var(--highlight);
+  }
+
+  .chat .new-messages-bar button
+  {
+    background-color: var(--highlight);
+  }
+
+  .chat .messages-wrapper + form
+  {
+    background-color: var(--light) !important;
+  }
+
+  .chat .messages-wrapper .scroller-wrap .scrollbar
+  {
+    background-color: var(--light) !important;
+  }
+
+  .chat .messages-wrapper .scroller-wrap .scrollbar .track
+  {
+    background: var(--light) !important;
+    border-color: var(--medium) !important;
+  }
+
+  .chat .messages-wrapper .scroller-wrap .scrollbar .thumb
+  {
+    border-color: var(--light) !important;
+  }
+
+  .chat .messages-wrapper .scroller-wrap .scrollbar .thumb::after
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .chat .messages-wrapper .scroller-wrap .scrollbar::after
+  {
+    background-color: var(--light) !important;
+  }
+
+  .chat .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece
+  {
+    background-color: var(--light);
+    border-color: var(--light);
+  }
+
+  .chat .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb
+  {
+    background-color: var(--dark);
+    border-color: var(--light);
+  }
+
+  .chat .messages
+  {
+    background-color: var(--light);
+  }
+
+  .chat .messages .has-more button
+  {
+    background: var(--medium);
+    border-color: var(--medium);
+    color: var(--highlight);
+  }
+
+  .chat .message-group
+  {
+    border-color: var(--light) !important;
+  }
+
+  .chat .message-group.is-local-bot-message
+  {
+    background: var(--light);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .chat .message-group-blocked
+  {
+    background: var(--medium) !important;
+  }
+
+  .chat .message-group-blocked-btn
+  {
+    background: var(--dark) !important;
+  }
+
+  .chat .mentioned .message-text
+  {
+    background: var(--transparent-highlight) !important;
+  }
+
+  .chat .embed-wrapper .embed-color-pill
+  {
+    background-color: var(--highlight) !important;
+  }
+
+  .chat .embed-wrapper .embed
+  {
+    background-color: var(--medium);
+  }
+
+  .chat code.inline
+  {
+    background-color: var(--medium-dark) !important;
+  }
+
+  .chat .markup pre
+  {
+    border-color: var(--dark) !important;
+  }
+
+  .chat .markup pre code
+  {
+    background: var(--dark) !important;
+  }
+
+  .chat .markup pre code::-webkit-scrollbar-track-piece
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .chat .markup pre code::-webkit-scrollbar-thumb
+  {
+    background-color: var(--light) !important;
+    border-color: var(--dark) !important;
+  }
+
+  .chat .invite-button
+  {
+    background-color: var(--dark);
+    border-color: var(--dark);
+  }
+
+  .chat .divider > span
+  {
+    background-color: var(--light) !important;
+  }
+
+  .chat .divider-red > div
+  {
+    background-color: var(--highlight) !important;
+  }
+
+  .chat .divider-red > span
+  {
+    color: var(--highlight) !important;
+  }
+
+  .chat .header-toolbar .toolbar-badge
+  {
+    background-color: var(--highlight);
+  }
+
+  .chat .search .search-bar [class*=DraftEditorPlaceholder]
+  {
+    color: var(--gray);
+  }
+
+  .chat .search .search-bar .search-filter
+  {
+    background-color: var(--light);
+  }
+
+  .chat .search-results-wrap
+  {
+    background-color: var(--medium);
+  }
+
+  .chat .search-results-wrap .search-header
+  {
+    background-color: var(--dark);
+  }
+
+  .chat .search-results-wrap [class^=scroller-]::-webkit-scrollbar-track-piece
+  {
+    background-color: var(--medium);
+  }
+
+  .chat .search-results-wrap [class^=scroller-]::-webkit-scrollbar-thumb
+  {
+    background-color: var(--dark);
+  }
+
+  .chat .search-results-wrap .channel-name
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .chat .search-results-wrap .search-result::before, .chat .search-results-wrap .search-result::after
+  {
+    background-image: none;
+  }
+
+  .chat .search-results-wrap .search-result .hit
+  {
+    background-color: var(--medium) !important;
+    border-color: var(--dark) !important;
+  }
+
+  .chat .search-results-wrap .jump-button
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .chat .search-results-wrap .highlight
+  {
+    background-color: var(--transparent-highlight);
+  }
+
+  .chat .channel-members
+  {
+    background-color: var(--medium);
+  }
+
+  .chat .channel-members::-webkit-scrollbar-thumb
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .chat .channel-members [class^=scrollbar-]
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .chat .channel-members [class^=scrollbar-] [class^=thumb-]
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .chat .channel-members [class^=scrollbar-] [class^=pad-]
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .chat .channel-members .member:hover,
+    .chat .channel-members .member.popout-open
+  {
+    background: var(--light);
+  }
+
+  .chat .channel-textarea-guard .countdown .countdown-number
+  {
+    background: var(--dark);
+    border-color: var(--light);
+  }
+
+  .chat [class^=channelTextAreaEnabled] [class^=innerEnabled]
+  {
+    background-color: var(--medium);
+    border-color: var(--medium);
+  }
+
+  .chat [class^=channelTextAreaEnabled] [class^=innerEnabled] [class^=autocomplete-]
+  {
+    background-color: var(--dark);
+  }
+
+  .chat [class^=channelTextAreaEnabled] [class^=innerEnabled] [class^=autocomplete-] [class^=selectorSelected-]
+  {
+    background-color: var(--medium);
+  }
+
+  .chat [class^=channelTextAreaDisabled-] [class^=innerDisabled-]
+  {
+    background-color: var(--light);
+  }
+
+  .chat [class^=channelTextAreaDisabled-] [class^=innerDisabled-] textarea::-webkit-input-placeholder,
+    .chat [class^=channelTextAreaDisabled-] [class^=innerDisabled-] textarea::-ms-input-placeholder,
+    .chat [class^=channelTextAreaDisabled-] [class^=innerDisabled-] textarea::placeholder
+  {
+    color: var(--gray);
+  }
+
+  .chat [class^=typing-]
+  {
+    background-color: var(--light) !important;
+  }
+
+  [class^=emojiPicker-]
+  {
+    background-color: var(--medium);
+    border-color: var(--dark);
+  }
+
+  [class^=emojiPicker-] .dimmer.visible
+  {
+    background-color: var(--medium-transparent);
+  }
+
+  [class^=emojiPicker-] .diversity-selector .popout
+  {
+    background: var(--dark);
+    border-color: var(--dark);
+  }
+
+  [class^=emojiPicker-] [class^=scroller-]::-webkit-scrollbar-track-piece
+  {
+    background-color: var(--medium);
+    border-color: var(--medium);
+  }
+
+  [class^=emojiPicker-] [class^=scroller-]::-webkit-scrollbar-thumb
+  {
+    background-color: var(--highlight) !important;
+  }
+
+  [class^=emojiPicker-] [class^=scroller-] [class^=stickyHeader-]
+  {
+    background: var(--medium);
+  }
+
+  [class^=emojiPicker-] [class^=scroller-] [class^=emojiItem-][class*=selected-]
+  {
+    background-color: var(--dark);
+  }
+
+  [class^=emojiPicker-] [class^=item-][class*=selected-]
+  {
+    border-color: var(--highlight) !important;
+  }
+
+  .instant-invite-modal
+  {
+    background: var(--medium) !important;
+  }
+
+  .instant-invite-modal .form-header
+  {
+    background: var(--medium) !important;
+  }
+
+  .instant-invite-modal .form-header header,
+      .instant-invite-modal .form-header .blurb
+  {
+    color: var(--gray) !important;
+  }
+
+  .instant-invite-modal .form-inner
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .instant-invite-modal .form-inner .clipboard-input-inner
+  {
+    background: var(--dark);
+    border-color: var(--dark);
+  }
+
+  .instant-invite-modal .form-inner .clipboard-input-inner input
+  {
+    background: var(--dark);
+    color: var(--highlight) !important;
+  }
+
+  .instant-invite-modal .form-inner .clipboard-input-inner button
+  {
+    background-color: var(--highlight) !important;
+    border-color: var(--highlight);
+  }
+
+  .instant-invite-modal .form-inner .clipboard-input-inner button::before
+  {
+    background: none;
+  }
+
+  .instant-invite-modal .form-inner .expire-text
+  {
+    color: var(--gray) !important;
+  }
+
+  .instant-invite-modal .form-inner .control-group label
+  {
+    color: var(--gray);
+  }
+
+  .instant-invite-modal .form-inner .control-group .Select-control
+  {
+    background-color: var(--dark);
+    border-color: var(--dark) !important;
+  }
+
+  .instant-invite-modal .form-inner .control-group .Select-menu::-webkit-scrollbar
+  {
+    background-color: var(--dark);
+  }
+
+  .instant-invite-modal .form-inner .control-group .Select-menu::-webkit-scrollbar-thumb
+  {
+    background-color: var(--light);
+    border: 3px solid var(--dark);
+    border-radius: 5px;
+  }
+
+  .instant-invite-modal .form-inner .control-group .Select-menu-outer
+  {
+    border-color: var(--dark);
+  }
+
+  .instant-invite-modal .form-inner .control-group .Select-option
+  {
+    background: var(--dark);
+    border-radius: 0;
+    color: var(--gray);
+  }
+
+  .instant-invite-modal .form-inner .control-group .Select-option:hover
+  {
+    color: var(--white);
+  }
+
+  .instant-invite-modal .form-inner .control-group .Select-option.is-focused
+  {
+    background: var(--light);
+  }
+
+  .instant-invite-modal .form-actions
+  {
+    background-color: var(--medium) !important;
+  }
+
+  .instant-invite-modal .form-actions .btn-default
+  {
+    border-color: var(--medium);
+    color: var(--gray) !important;
+  }
+
+  .instant-invite-modal .form-actions .btn-primary
+  {
+    background-color: var(--highlight);
+  }
+
+  .instant-invite-modal .checkbox .checkbox-inner + span
+  {
+    color: var(--gray);
+  }
+
+  [class^=backdrop-] + [class^=modal-] [class^=modal]
+  {
+    background-color: var(--medium);
+  }
+
+  [class^=backdrop-] + [class^=modal-] [class^=modal] [class^=inputDefault-]
+  {
+    background-color: var(--dark) !important;
+    border-color: var(--dark) !important;
+  }
+
+  [class^=backdrop-] + [class^=modal-] [class^=modal] [class*=footer-]
+  {
+    background-color: var(--dark);
+  }
+
+  [class^=backdrop-] + [class^=modal-] [class^=topSectionNormal-]
+  {
+    background-color: var(--dark);
+  }
+
+  [class^=backdrop-] + [class^=modal-] [class^=topSectionPlaying-]
+  {
+    background-color: var(--highlight);
+  }
+
+  [class^=backdrop-] + [class^=modal-] [class^=topSectionNormal-] + [class*=body-],
+  [class^=backdrop-] + [class^=modal-] [class^=topSectionPlaying-] + [class*=body-]
+  {
+    background-color: var(--light);
+  }
+
+  [class^=backdrop-] + [class^=modal-] [class*=listAvatar]
+  {
+    background-color: var(--medium);
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-]
+  {
+    background-color: var(--medium);
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-] [class*=input-]:focus
+  {
+    border-color: var(--highlight);
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-] [class*=cardPrimaryEditable-]
+  {
+    background-color: var(--dark) !important;
+    border-color: var(--dark) !important;
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-] [class*=cardPrimaryEditable-] [class*=focused-]
+  {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-] [class*=cardPrimaryEditable-] [class*=checked-]
+  {
+    background-color: var(--highlight);
+    border-color: var(--dark) !important;
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-] [class*=cardPrimaryEditable-] [class*=checked-] svg g polyline
+  {
+    stroke: var(--gray);
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-] [class^=message-]
+  {
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-] [class*=valueChecked-]
+  {
+    background-color: var(--highlight);
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-] > [class^=flex-]:last-child
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .callout-backdrop + [class^=modal-] [class^=modal-] [class*=buttonBrandFilled-]
+  {
+    background-color: var(--highlight);
+  }
+
+  .modal-image
+  {
+    background-color: transparent !important;
+  }
+
+  .deprecated-settings-modal .settings-header
+  {
+    background-color: var(--medium);
+  }
+
+  .deprecated-settings-modal .settings-header .tab-bar-item.selected::before,
+    .deprecated-settings-modal .settings-header .tab-bar-item:hover::before
+  {
+    border-color: var(--highlight);
+  }
+
+  .deprecated-settings-modal .settings-inner
+  {
+    background-color: var(--dark);
+  }
+
+  .deprecated-settings-modal .settings-inner .old-h1
+  {
+    color: var(--gray);
+  }
+
+  .deprecated-settings-modal .settings-inner hr
+  {
+    border-color: var(--medium);
+  }
+
+  .deprecated-settings-modal .settings-inner .control-group div
+  {
+    color: var(--gray);
+  }
+
+  .deprecated-settings-modal .settings-inner .control-group div svg line
+  {
+    stroke: var(--highlight) !important;
+  }
+
+  .deprecated-settings-modal .settings-inner .user-list
+  {
+    border-color: var(--medium) !important;
+  }
+
+  .deprecated-settings-modal .settings-inner .user-list li:hover,
+      .deprecated-settings-modal .settings-inner .user-list li.selected
+  {
+    background: var(--medium) !important;
+  }
+
+  .deprecated-settings-modal .settings-inner .user-list li:hover::before,
+        .deprecated-settings-modal .settings-inner .user-list li.selected::before
+  {
+    background-color: var(--highlight) !important;
+  }
+
+  .deprecated-settings-modal .settings-inner .user-list li:hover::before
+  {
+    opacity: .5;
+  }
+
+  .deprecated-settings-modal .settings-inner ::-webkit-scrollbar-track-piece
+  {
+    background-color: var(--dark);
+    border-color: var(--dark);
+  }
+
+  .deprecated-settings-modal .settings-inner ::-webkit-scrollbar-thumb
+  {
+    background-color: var(--highlight);
+    border-color: var(--dark);
+  }
+
+  .deprecated-settings-modal .settings-actions
+  {
+    background-color: var(--medium-dark);
+    border-color: var(--medium-dark);
+  }
+
+  .deprecated-settings-modal .settings-actions .btn-default
+  {
+    background-color: var(--medium-dark);
+    border-color: var(--medium-dark);
+  }
+
+  .deprecated-settings-modal .settings-actions .btn-primary
+  {
+    background-color: var(--highlight);
+  }
+
+  .deprecated-settings-modal .settings-actions .btn-primary:hover
+  {
+    background-color: var(--dark-highlight);
+  }
+
+  .deprecated-settings-modal label
+  {
+    color: var(--gray) !important;
+  }
+
+  .keyboard-shortcuts-modal
+  {
+    background-color: var(--medium);
+  }
+
+  .keyboard-shortcuts-modal .modal-title .content
+  {
+    color: var(--white);
+  }
+
+  .keyboard-shortcuts-modal .modal-subtitle
+  {
+    color: var(--gray);
+  }
+
+  .keyboard-shortcuts-modal .scroller::-webkit-scrollbar-track-piece
+  {
+    background-color: var(--medium);
+    border-color: var(--medium);
+  }
+
+  .keyboard-shortcuts-modal .scroller::-webkit-scrollbar-thumb
+  {
+    background-color: var(--highlight);
+    border-color: var(--medium);
+  }
+
+  .keyboard-shortcuts-modal .keybind-description
+  {
+    color: var(--gray) !important;
+  }
+
+  .ui-standard-sidebar-view .sidebar-region
+  {
+    background: var(--medium) !important;
+  }
+
+  .ui-standard-sidebar-view .content-region
+  {
+    background: var(--light) !important;
+  }
+
+  .ui-standard-sidebar-view [class^=itemDefaultSelected-]
+  {
+    background-color: var(--highlight);
+  }
+
+  .ui-standard-sidebar-view [class^=itemDefault-]:hover
+  {
+    background-color: var(--light);
+  }
+
+  .ui-standard-sidebar-view [class^=itemBrand-]
+  {
+    color: var(--highlight);
+  }
+
+  .ui-standard-sidebar-view [class^=itemBrandSelected-]
+  {
+    background-color: var(--highlight);
+  }
+
+  .ui-standard-sidebar-view [class*=buttonFilled-]
+  {
+    background-color: var(--highlight);
+  }
+
+  .ui-standard-sidebar-view [class*=headerClickable-],
+  .ui-standard-sidebar-view [class*=headerDefault-]
+  {
+    background-color: var(--medium);
+  }
+
+  .ui-standard-sidebar-view [class*=headerExpanded-]
+  {
+    background-color: var(--dark);
+  }
+
+  .ui-standard-sidebar-view [class*=changeDetails-]
+  {
+    background-color: var(--medium);
+  }
+
+  .ui-standard-sidebar-view [class*=valueChecked-]
+  {
+    background-color: var(--highlight);
+  }
+
+  .ui-standard-sidebar-view [class^=barFill-]
+  {
+    background: var(--highlight);
+  }
+
+  .ui-standard-sidebar-view .user-info-viewing
+  {
+    background: var(--dark);
+    border-color: var(--dark);
+  }
+
+  .ui-standard-sidebar-view [class*=cardPrimary-],
+  .ui-standard-sidebar-view [class*=cardPrimaryEditable-]
+  {
+    background: var(--dark) !important;
+    border-color: var(--dark) !important;
+  }
+
+  .ui-standard-sidebar-view [class*=cardPrimary-] [class*=focused-],
+    .ui-standard-sidebar-view [class*=cardPrimaryEditable-] [class*=focused-]
+  {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  .ui-standard-sidebar-view [class*=cardPrimary-] [class*=checked-],
+    .ui-standard-sidebar-view [class*=cardPrimaryEditable-] [class*=checked-]
+  {
+    background-color: var(--highlight);
+    border-color: var(--dark) !important;
+  }
+
+  .ui-standard-sidebar-view [class*=cardPrimary-] [class*=checked-] svg g polyline,
+      .ui-standard-sidebar-view [class*=cardPrimaryEditable-] [class*=checked-] svg g polyline
+  {
+    stroke: var(--gray);
+  }
+
+  .ui-standard-sidebar-view .connect-account-btn-inner
+  {
+    background-color: var(--light) !important;
+  }
+
+  .ui-standard-sidebar-view .Select-control
+  {
+    background: var(--dark) !important;
+  }
+
+  .ui-standard-sidebar-view .Select-menu-outer
+  {
+    background: var(--dark) !important;
+  }
+
+  .ui-standard-sidebar-view .ui-key-recorder:not(.disabled):hover
+  {
+    border-color: var(--dark);
+  }
+
+  .ui-standard-sidebar-view .ui-key-recorder:not(.disabled):hover.recording
+  {
+    -webkit-animation: none;
+    animation: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .ui-standard-sidebar-view .ui-hover-card::before
+  {
+    background-color: var(--medium);
+  }
+
+  .add-game-popout
+  {
+    background-color: var(--dark) !important;
+  }
+
+  .add-game-popout .Select-menu-outer
+  {
+    background: var(--medium) !important;
+  }
+
+  .add-game-popout .Select-option.is-focused
+  {
+    background: var(--dark) !important;
+  }
+
+  .add-game-popout [class*=buttonBrandFilled-]
+  {
+    background-color: var(--highlight);
+  }
