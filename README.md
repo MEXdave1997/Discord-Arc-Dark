@@ -21,4 +21,4 @@ I just made it more convenient to download and use with Better Discord! :)
 
 ## License 
 
-This is licensed under the **Creative Commons by Non-Commercial Share Alike (CC BY-NC-SA). 
+This is licensed under the **Creative Commons by Non-Commercial Share Alike (CC BY-NC-SA)**. 
