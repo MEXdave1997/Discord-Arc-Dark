@@ -1,16 +1,5 @@
 //META{"name":"Discord Arc Dark","description":"A theme for Discord that changes the colors to match the Arc Dark GTK scheme.","author":"sans","version":"1.00"}*//
 
-------------------------------
-
-This theme was ported from another site.
-
-Original Author: sans
-
-Original Theme: https://userstyles.org/styles/127986/discord-arc-dark
-
-------------------------------
-
-
 :root
   {
     --white: #fff;
@@ -1892,3 +1881,13 @@ Original Theme: https://userstyles.org/styles/127986/discord-arc-dark
   {
     background-color: var(--highlight);
   }
+
+------------------------------
+
+This theme was ported from another site.
+
+Original Author: sans
+
+Original Theme: https://userstyles.org/styles/127986/discord-arc-dark
+
+------------------------------
